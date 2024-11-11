@@ -1,0 +1,30 @@
+:root {
+    --white: #ffffff;
+    --pink-lavender: #EFC1E4ff;
+    --wisteria: #C193C8ff;
+    --salmon-pink: #FA8E9Bff;
+    --tiffany-blue: #8DDFDDff;
+    --melon: #FEAC96ff;
+}
+
+.ProductList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ProductList_card {
+    width: 20%;
+    max-width: 20%;
+}
+
+.App {
+    color: var(--wisteria);
+    background-color: var(--white);
+}
+.AppTitle {
+    text-align: center;
+    color: var(--white);
+    background-color: var(--wisteria);
+}
