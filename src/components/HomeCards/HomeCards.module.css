@@ -1,0 +1,57 @@
+.homeCards {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a lo largo del eje horizontal */
+    align-items: center;
+    height: 100vh; /* Asegura que el componente cubra toda la pantalla */
+    padding: 0 20px; /* Opcional: Añade un padding horizontal para que el contenido no esté tan pegado a los bordes */
+    background: linear-gradient(to bottom, #61346B, #CCACDB); /* Degradado de fondo */
+  }
+  
+  .imageSection {
+    display: flex;
+    align-items: center; /* Centra la imagen en el eje vertical */
+    justify-content: start; /* Asegura que los elementos internos estén bien distribuidos */
+    width: 100%; /* Ajusta al 100% del contenedor */
+  }
+  
+  .mainImg {
+    object-fit: cover;
+    width: 560px; /* Tamaño fijo para la imagen principal */
+    height: 824px; /* Tamaño fijo para la imagen principal */
+  }
+  
+  .textVertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: 'Italiana', serif;
+    font-size: 48px;
+    margin-right: 80px;
+    color: #FFFFFF;
+  }
+  
+  .rightSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%; /* O ajusta según el tamaño necesario */
+  }
+  
+  .orangeBox {
+    background-color: #BF5D20;
+    height: 45%; /* 5/12 de la altura */
+    width: 100%;
+  }
+  
+  .smallImg {
+    object-fit: cover;
+    height: 35%; /* 4/12 de la altura */
+    width: 100%;
+  }
+  
+  .textBox {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 100px;
+  }
+  

@@ -1,23 +1,30 @@
-import logo from '../../logo.svg';
+import React from 'react';
+import logo from '../../logo.svg'; // Este logo puede ser usado en el navbar si lo necesitas
 import css from './App.module.css';
+import { ProductCard } from "../../components";
+import { HomeCards } from "../../components";
+import { Navbar } from "../../components";
+import { products } from "../../utils/products";
 
 function App() {
   return (
-    <div className={css.App}>
-      <header className={css.App_header}>
-        <img src={logo} className={css.App_logo} alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className={css.App_link}
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Navbar */}
+      <Navbar />
+      
+      {/* HomeCards */}
+      <HomeCards />
+
+      {/* Título principal */}
+      <h1 className={css.AppTitle}>TITULO??</h1>
+      <p>Tienda PERFUMES.</p>
+      
+      {/* Lista de productos */}
+      <div className={css.ProductList}>
+        {products.map((product) => {
+          return <ProductCard key={product.id} product={product} className={css.ProductList_card} />
+        })}
+      </div>
     </div>
   );
 }
