@@ -4,7 +4,7 @@
     align-items: center;
     height: 100vh; /* Asegura que el componente cubra toda la pantalla */
     padding: 0 20px; /* Opcional: Añade un padding horizontal para que el contenido no esté tan pegado a los bordes */
-    background: linear-gradient(to bottom, #61346B, #CCACDB); /* Degradado de fondo */
+    background: linear-gradient(to bottom, #61346B, #BF69C2); /* Degradado de fondo */
   }
   
   .imageSection {
@@ -42,6 +42,21 @@
     height: 45%; /* 5/12 de la altura */
     width: 100%;
   }
+
+  .orangeBoxH1 {
+    font-weight: normal;
+    color: #FFFFFF;
+    font-family: 'Italiana', serif;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .special {
+    color: #FFFFFF;
+    margin: 16px;
+    font-family: 'Italiana', serif;
+    font-size: 40px;
+  }
   
   .smallImg {
     object-fit: cover;
@@ -54,4 +69,6 @@
     text-align: center;
     padding: 100px;
   }
+
+  
   

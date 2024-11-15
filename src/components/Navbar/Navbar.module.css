@@ -1,28 +1,63 @@
+/* Estilos de la Navbar */
 .navbar {
-    height: 84px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    background-color: #FFFFFF;
-  }
+  position: fixed; /* Fija la navbar en la parte superior */
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Navbar visible */
+.visible {
+  transform: translateY(0); /* Navbar en su posición original */
+  opacity: 1; /* Totalmente visible */
+}
+
+/* Navbar oculta */
+.hidden {
+  transform: translateY(-100%); /* Navbar desplazada hacia arriba fuera de la vista */
+  opacity: 0; /* Completamente invisible */
+}
+
+/* Links principales */
+.navlinks {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.navlinks li {
+  color: #61346B;
+  font-family: 'Italianno', serif;
+  font-size: 32px;
+}
+
+/* Estilos especiales (Login y Carrito) */
+.special {
   
-  .navlinks {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-  }
-  
-  .navlinks li {
-    color: #61346B;
-    font-family: 'Italianna', serif;
-    font-size: 18px;
-  }
-  
-  .special {
-    border: 2px solid #61346B;
-    color: #FFFFFF;
-    background-color: #61346B;
-    padding: 8px 16px;
-    border-radius: 5px;
-  }
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  font-size: 32px;
+}
+
+.special li {
+  font-family: 'Italianno', serif;
+  color: #FFFFFF;
+  background-color: #61346B;
+  padding: 8px 40px;
+  border-radius: 5px;
+}
+
+.logo {
+  height: 8px; /* 4/12 de la altura */
+  width: 16px;
+}
