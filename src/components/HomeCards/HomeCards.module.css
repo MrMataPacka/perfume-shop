@@ -1,3 +1,12 @@
+:root {
+  --Dorado: #CFAC38;
+  --Marrón: #BF5D20;
+  --MoradoOscuro: #61346B;
+  --MoradoClaro: #BF69C2;
+  --Lavanda: #CCACDB;
+  --Blanco: #FFFFFF;
+}
+
 .homeCards {
     display: flex;
     justify-content: space-between; /* Distribuye los elementos a lo largo del eje horizontal */
@@ -49,6 +58,15 @@
     font-family: 'Italiana', serif;
     font-size: 48px;
     text-align: center;
+  }
+
+  .textBox {
+    font-weight: normal;
+    color: var(--MoradoOscuro);
+    font-family: 'Italianno', serif;
+    font-size: 40px;
+    text-align: left;
+    
   }
 
   .special {

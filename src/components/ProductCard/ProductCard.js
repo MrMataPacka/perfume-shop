@@ -14,14 +14,14 @@ class ProductCard extends Component {
         return (
             <div className={classNames(css.ProductCard, className)}>
                 <div className={css.ProductCard_header}>
-                    <img src={product.image} alt ="Product"/>
+                    <img className={css.ProductCard_img} src={product.image} alt ="Product"/>
                 </div>
                 <div className={css.ProductCard_body}>
-                    <h2>{product.name}</h2>
+                    <h2 className={css.ProductCard_name}>{product.name}</h2>
                     <p>{product.description}</p>
-                    <p>{product.price}</p>
+                    <p className={css.ProductCard_price}> {product.price + "$"} </p>
                 </div>
-                <button className={css.ProductCard_button}>Add to Cart</button>
+                <button className={css.ProductCard_button}>Añadir al Carrito</button>
             </div>
         )
     }

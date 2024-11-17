@@ -1,23 +1,30 @@
 export const products = [
     {
         id: 1,
-        name: 'Product 1',
-        price: 100,
-        description: 'This is a description for product 1',
-        image: 'https://via.placeholder.com/150'
+        name: 'CHANEL: BLEU DE CHANEL',
+        price: 899,
+        description: 'GEL DE DUCHA',
+        image: "https://ss701.liverpool.com.mx/xl/1001719633.jpg"
     },
     {
         id: 2,
-        name: 'Product 2',
-        price: 200,
-        description: 'This is a description for product 2',
-        image: 'https://via.placeholder.com/150'
+        name: 'CHANEL: BLEU DE CHANEL',
+        price: 899,
+        description: 'GEL DE DUCHA',
+        image: "https://ss701.liverpool.com.mx/xl/1001719633.jpg"
     },
     {
         id: 3,
-        name: 'Product 3',
-        price: 300,
-        description: 'This is a description for product 3',
-        image: 'https://via.placeholder.com/150'
+        name: 'CHANEL: BLEU DE CHANEL',
+        price: 899,
+        description: 'GEL DE DUCHA',
+        image: "https://ss701.liverpool.com.mx/xl/1001719633.jpg"
+    },
+    {
+        id: 4,
+        name: 'CHANEL: BLEU DE CHANEL',
+        price: 899,
+        description: 'GEL DE DUCHA',
+        image: "https://ss701.liverpool.com.mx/xl/1001719633.jpg"
     }
 ]

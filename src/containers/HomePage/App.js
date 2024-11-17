@@ -12,9 +12,6 @@ function App() {
       <Navbar />
       
       <HomeCards />
-
-      <h1 className={css.AppTitle}>TITULO??</h1>
-      <p>Tienda PERFUMES.</p>
       
       <div className={css.ProductList}>
         {products.map((product) => {

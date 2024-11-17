@@ -1,19 +1,74 @@
+:root {
+    --Dorado: #CFAC38;
+    --Marrón: #BF5D20;
+    --MoradoOscuro: #61346B;
+    --MoradoClaro: #BF69C2;
+    --Lavanda: #CCACDB;
+    --Blanco: #FFFFFF;
+  }
+
 .ProductCard {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    margin: 10px;
+    padding: 8px;
+    background-color: var(--MoradoOscuro);
+    border: 1px solid var(--MoradoClaro);
+    margin: 8px;
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .ProductCard_header {
-    color: black;
+    width: 392px; /* Tamaño fijo para la imagen principal */
+    align-items: center;
+    color: var(--Blanco);
+    background-color: var(--Lavanda);
+
 }
 
 .ProductCard_body {
-    color: black;
+    text-align: center;
+    align-items: center;
+    font-weight: normal;
+    font-family: 'Italianno', serif;
+    font-size: 24px;
+    background-color: var(--MoradoOscuro);
+    color: var(--Blanco);
+}
+
+.ProductCard_name {
+    font-weight: normal;
+    font-family: 'Italiana', serif;
+    font-size: 40px;
+    background-color: var(--MoradoOscuro);
+    color: var(--Blanco);
+}
+
+.ProductCard_price {
+    font-weight: normal;
+    font-family: 'Italiana', serif;
+    font-size: 60px;
+    align-items: center;
+    background-color: var(--MoradoOscuro);
+    color: var(--Blanco);
+}
+
+.ProductCard_img {
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    object-fit: cover;
+    width: 240px; /* Tamaño fijo para la imagen principal */
+    height: 400px; /* Tamaño fijo para la imagen principal */
+}
+
+.ProductCard_button {
+    font-weight: normal;
+    font-family: 'Italianno', serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    object-fit: cover;
+    width: 392px; /* Tamaño fijo para la imagen principal */
+    background-color: var(--Lavanda);
+    border: 1px solid var(--Lavanda);
 }

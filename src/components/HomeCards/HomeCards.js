@@ -19,7 +19,7 @@ const HomeCards = () => {
           </ul>
         </div>
         <img src="https://blog.perfumeriasunidas.com/hubfs/PORTADA%20FRAGANCIAS.png" alt="Imagen Stock" className={css.smallImg} />
-        <div className={css.textBox}>Texto con fondo blanco</div>
+        <div className={css.textBox}>Los aromas de más exclusivos de México en un solo lugar...</div>
       </div>
     </div>
   );

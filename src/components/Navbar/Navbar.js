@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import css from'./Navbar.module.css'; // Recuerda incluir estilos personalizados
+import css from'./Navbar.module.css'; 
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true); // Estado para controlar si la navbar es visible
@@ -25,7 +25,7 @@ const Navbar = () => {
   }, [lastScrollY]);
   return (
     <nav className={`${css.navbar} ${isVisible ? css.visible : css.hidden}`}>
-    <div className={css.logo}><img src= "https://www.figma.com/design/1qTdf8md8E2UB3Ye2tC8uj/PerfumeShopDraft?node-id=9-6&t=LL8Br5hArV80Vda1-4"/></div>
+    <div className={css.logo}><img src= '/MaGellyLogo.png'/></div>
     <ul className={css.navlinks}>
       <li>Mujeres</li>
       <li>Hombres</li>
