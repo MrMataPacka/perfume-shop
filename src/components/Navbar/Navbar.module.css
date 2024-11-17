@@ -57,4 +57,18 @@
   border-radius: 5px;
 }
 
+.navlinks li:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.special li:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 

@@ -72,3 +72,11 @@
     background-color: var(--Lavanda);
     border: 1px solid var(--Lavanda);
 }
+
+.ProductCard_button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: var(--MoradoClaro);
+    color: var(--MoradoOscuro);
+    border: 1px solid var(--MoradoClaro);
+  }

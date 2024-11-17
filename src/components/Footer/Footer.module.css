@@ -1,0 +1,64 @@
+:root {
+    --Dorado: #CFAC38;
+    --Marrón: #BF5D20;
+    --MoradoOscuro: #61346B;
+    --MoradoClaro: #BF69C2;
+    --Lavanda: #CCACDB;
+    --Blanco: #FFFFFF;
+  }
+
+.footer {
+    background: linear-gradient(to bottom, #61346B, #BF69C2); /* Degradado de fondo */
+    height: 332px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+  
+  .leftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo {
+    width: 400px; /* Tamaño grande para el logo, ajusta según necesites */
+    height: auto;
+  }
+  
+  .tagline {
+    color: #FFFFFF;
+    font-family: 'Italianno', serif;
+    font-size: 28px;
+    margin-top: 10px;
+  }
+  
+  .rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .socialTitle {
+    font-weight: normal;
+    color: #FFFFFF;
+    font-family: 'Italianno', serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .socialIcons a {
+    color: #FFFFFF;
+    font-size: 32px;
+    transition: transform 0.3s ease;
+  }
+  
+  .socialIcons a:hover {
+    transform: scale(1.2);
+  }
