@@ -1,0 +1,134 @@
+/* Contenedor del producto destacado */
+.featuredProduct {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+    width: 100%; /* Hace que el contenedor abarque todo el ancho de la pantalla */
+    padding: 40px; /* Aumenta el padding para que haya más espacio alrededor */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 50px;
+    gap: 50px; /* Aumenta el espacio entre la imagen y la info */
+    box-sizing: border-box;
+  }
+  
+  /* Imagen del producto en grande */
+  .productImage img {
+    width: 800px; /* Imagen más grande para ocupar más espacio */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 40px;
+  }
+  
+  /* Información del producto */
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px; /* Espacio más amplio entre los elementos */
+    max-width: 600px; /* Ancho mayor para abarcar más espacio */
+  }
+
+  .title {
+    font-family: 'Italiana';
+    font-weight: normal;
+    font-size: 116px; /* Aumenta considerablemente el tamaño de la fuente */
+    color: #61346B;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo del nombre del producto */
+  .productName {
+    font-family: 'Italianno', serif;
+    font-size: 60px; /* Aumenta considerablemente el tamaño de la fuente */
+    color: #61346B;
+    margin-bottom: 15px;
+  }
+  
+  /* Estrellas de calificación */
+  .stars {
+    font-size: 32px; /* Agranda las estrellas */
+    color: #FFD700;
+  }
+  
+  /* Precios */
+  .pricing {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio mayor entre los precios */
+  }
+  
+  .priceDiscounted {
+    font-size: 36px; /* Aumenta el tamaño del precio con descuento */
+    color: #61346B;
+    font-weight: bold;
+  }
+  
+  .originalPrice {
+    font-size: 28px;
+    color: #999999;
+    text-decoration: line-through;
+  }
+  
+  .discountPercentage {
+    font-size: 26px;
+    color: #FF6347;
+  }
+  
+  /* Acciones - cantidad y botón de añadir a la cesta */
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Más espacio entre los inputs */
+  }
+  
+  .quantityInput {
+    width: 60px;
+    padding: 10px;
+    font-size: 20px; /* Texto más grande */
+  }
+  
+  .addToCartButton {
+    background-color: #61346B;
+    color: white;
+    border: none;
+    padding: 15px 25px; /* Botón más grande */
+    font-size: 20px; /* Texto más grande */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addToCartButton:hover {
+    background-color: #CCACDB;
+  }
+  
+  /* Galería de productos pequeños */
+  .productGallery {
+    display: flex;
+    gap: 20px; /* Más espacio entre las miniaturas */
+    margin-top: 30px;
+    justify-content: flex-start; /* Alinea la galería al principio */
+  }
+  
+  .galleryItem {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+  }
+  
+  .galleryItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .galleryItem:hover {
+    border-color: #61346B;
+  }
+  

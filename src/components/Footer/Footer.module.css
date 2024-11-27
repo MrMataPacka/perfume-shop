@@ -8,7 +8,7 @@
   }
 
 .footer {
-    background: linear-gradient(to bottom, #61346B, #BF69C2); /* Degradado de fondo */
+    background: linear-gradient(to bottom, #61346B, #BF69C2); 
     height: 332px;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,7 @@
   }
   
   .logo {
-    width: 400px; /* Tamaño grande para el logo, ajusta según necesites */
+    width: 400px; 
     height: auto;
   }
   

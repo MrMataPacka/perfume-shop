@@ -2,27 +2,26 @@ import React, { useState, useEffect } from 'react';
 import css from'./Navbar.module.css'; 
 
 const Navbar = () => {
-  const [isVisible, setIsVisible] = useState(true); // Estado para controlar si la navbar es visible
-  const [lastScrollY, setLastScrollY] = useState(0); // Estado para almacenar la última posición de scroll
+  const [isVisible, setIsVisible] = useState(true); 
+  const [lastScrollY, setLastScrollY] = useState(0); 
 
   const controlNavbar = () => {
     if (window.scrollY > lastScrollY) {
-      // Si el usuario se desplaza hacia abajo, oculta la Navbar
       setIsVisible(false);
     } else {
-      // Si el usuario se desplaza hacia arriba, muestra la Navbar
       setIsVisible(true);
     }
-    setLastScrollY(window.scrollY); // Actualiza la última posición de scroll
+    setLastScrollY(window.scrollY); 
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', controlNavbar); // Escucha el evento de desplazamiento
+    window.addEventListener('scroll', controlNavbar); 
 
     return () => {
-      window.removeEventListener('scroll', controlNavbar); // Limpia el evento cuando se desmonta el componente
+      window.removeEventListener('scroll', controlNavbar); 
     };
   }, [lastScrollY]);
+  
   return (
     <nav className={`${css.navbar} ${isVisible ? css.visible : css.hidden}`}>
     <div className={css.logo}><img src= '/MaGellyLogo.png'/></div>

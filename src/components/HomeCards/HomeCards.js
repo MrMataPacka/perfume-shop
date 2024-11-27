@@ -6,7 +6,7 @@ const HomeCards = () => {
     <div className={css.homeCards}>
       <div className={css.imageSection}>
         <img src="https://blog.perfumeriasunidas.com/hubfs/PORTADA%20FRAGANCIAS.png" alt="Imagen de Stock" className={css.mainImg} />
-        <div className={css.textVertical}>DESCUBRE LAS NUEVAS FRAGANCIAS</div>
+        <div className={css.textVertical}>     DESCUBRE LAS NUEVAS FRAGANCIAS</div>
       </div>
       <div className={css.rightSection}>
         <div className={css.orangeBox}>

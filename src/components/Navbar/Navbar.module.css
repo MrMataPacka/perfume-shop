@@ -17,17 +17,17 @@
 
 /* Navbar visible */
 .visible {
-  transform: translateY(0); /* Navbar en su posición original */
-  opacity: 1; /* Totalmente visible */
+  transform: translateY(0); 
+  opacity: 1;
 }
 
 /* Navbar oculta */
 .hidden {
-  transform: translateY(-100%); /* Navbar desplazada hacia arriba fuera de la vista */
-  opacity: 0; /* Completamente invisible */
+  transform: translateY(-100%); 
+  opacity: 0;
 }
 
-/* Links principales */
+
 .navlinks {
   display: flex;
   list-style: none;
@@ -40,7 +40,7 @@
   font-size: 32px;
 }
 
-/* Estilos especiales (Login y Carrito) */
+
 .special {
   
   display: flex;

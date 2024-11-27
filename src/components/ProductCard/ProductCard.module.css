@@ -20,7 +20,7 @@
 }
 
 .ProductCard_header {
-    width: 392px; /* Tamaño fijo para la imagen principal */
+    width: 392px; 
     align-items: center;
     color: var(--Blanco);
     background-color: var(--Lavanda);
@@ -55,11 +55,11 @@
 }
 
 .ProductCard_img {
-    display: block; /* Asegura que la imagen se comporte como un bloque */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; 
+    margin: 0 auto; 
     object-fit: cover;
-    width: 240px; /* Tamaño fijo para la imagen principal */
-    height: 400px; /* Tamaño fijo para la imagen principal */
+    width: 240px;
+    height: 400px; 
 }
 
 .ProductCard_button {
@@ -68,7 +68,7 @@
     color: #FFFFFF;
     font-size: 24px;
     object-fit: cover;
-    width: 392px; /* Tamaño fijo para la imagen principal */
+    width: 392px; 
     background-color: var(--Lavanda);
     border: 1px solid var(--Lavanda);
 }

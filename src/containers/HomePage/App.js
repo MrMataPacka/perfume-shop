@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from '../../logo.svg'; // Este logo puede ser usado en el navbar si lo necesitas
+import logo from '../../logo.svg'; 
 import css from './App.module.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { ProductCard } from "../../components";
 import { HomeCards } from "../../components";
 import { Navbar } from "../../components";
 import { Footer } from "../../components";
+import { FeaturedProducts } from "../../components";
 import { products } from "../../utils/products";
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <Navbar />
       
       <HomeCards />
+
+      <FeaturedProducts />
       
       <div className={css.ProductList}>
         {products.map((product) => {
