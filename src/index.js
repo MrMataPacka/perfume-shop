@@ -8,7 +8,8 @@ import {
 
 import {
   AboutUsPage,
-  HomePage
+  HomePage,
+  ShoppingCartPage
 } from './containers';
 
 import reportWebVitals from './reportWebVitals';

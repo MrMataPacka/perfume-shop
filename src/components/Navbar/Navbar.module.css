@@ -55,6 +55,7 @@
   background-color: #61346B;
   padding: 8px 40px;
   border-radius: 5px;
+  font-weight: normal;
 }
 
 .navlinks li:hover {

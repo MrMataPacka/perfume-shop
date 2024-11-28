@@ -5,7 +5,7 @@
     --MoradoClaro: #BF69C2;
     --Lavanda: #CCACDB;
     --Blanco: #FFFFFF;
-  }
+}
 
 .ProductCard {
     display: flex;
@@ -15,26 +15,29 @@
     background-color: var(--MoradoOscuro);
     border: 1px solid var(--MoradoClaro);
     margin: 8px;
-
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    /* Tamaño fijo para asegurar que todas las tarjetas sean iguales */
+    width: 392px;
+    min-height: 650px; /* Ajusta este valor según el tamaño total que necesites */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
 }
 
-.ProductCard_header {
-    width: 392px; 
+.ProductCard_header, .ProductCard_button {
+    width: 100%; 
     align-items: center;
-    color: var(--Blanco);
     background-color: var(--Lavanda);
-
+    color: var(--Blanco);
 }
 
 .ProductCard_body {
     text-align: center;
-    align-items: center;
     font-weight: normal;
     font-family: 'Italianno', serif;
     font-size: 24px;
     background-color: var(--MoradoOscuro);
     color: var(--Blanco);
+    flex-grow: 1; /* Permite que el contenido crezca o se reduzca según el espacio */
 }
 
 .ProductCard_name {
@@ -43,34 +46,36 @@
     font-size: 40px;
     background-color: var(--MoradoOscuro);
     color: var(--Blanco);
+    min-height: 80px; /* Asegura un espacio mínimo para el nombre */
 }
 
 .ProductCard_price {
     font-weight: normal;
     font-family: 'Italiana', serif;
     font-size: 60px;
-    align-items: center;
     background-color: var(--MoradoOscuro);
     color: var(--Blanco);
 }
 
 .ProductCard_img {
-    display: block; 
-    margin: 0 auto; 
+    display: block;
+    margin: 0 auto;
     object-fit: cover;
     width: 240px;
     height: 400px; 
+    flex-shrink: 0; /* Evita que la imagen se reduzca si hay poco espacio */
 }
 
 .ProductCard_button {
     font-weight: normal;
     font-family: 'Italianno', serif;
-    color: #FFFFFF;
+    color: var(--Blanco);
     font-size: 24px;
-    object-fit: cover;
-    width: 392px; 
     background-color: var(--Lavanda);
     border: 1px solid var(--Lavanda);
+    width: 100%;
+    padding: 12px; /* Aumenta el padding si quieres más altura para el botón */
+    text-align: center;
 }
 
 .ProductCard_button:hover {
@@ -79,4 +84,30 @@
     background-color: var(--MoradoClaro);
     color: var(--MoradoOscuro);
     border: 1px solid var(--MoradoClaro);
-  }
+}
+
+.ProductCardContainer {
+    padding: 20px;
+    text-align: center;
+}
+
+.Filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.Filters select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.ProductCardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+

@@ -1,5 +1,5 @@
 import { AboutUsPage, 
-    HomePage, } from "./containers";
+    HomePage, ShoppingCartPage} from "./containers";
 
 export const routes = [
     {
@@ -7,7 +7,7 @@ export const routes = [
         element: <HomePage />
     },
     {
-        path: '/about',
-        element: <AboutUsPage />
+        path: '/shopping-cart',
+        element: <ShoppingCartPage />
     }
 ]

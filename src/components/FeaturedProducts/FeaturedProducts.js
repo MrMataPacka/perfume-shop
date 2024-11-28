@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import css from './FeaturedProducts.module.css'; // Asegúrate de tener este archivo de CSS
 import { products } from '../../utils/products'; // Productos de referencia
+import { addProductToCart } from "../../utils/shoppingCartProducts";
 
 const FeaturedProducts = () => {
+
+  
   const [selectedProduct, setSelectedProduct] = useState(products[0]); // Estado para controlar el producto seleccionado
 
   const handleProductChange = (product) => {

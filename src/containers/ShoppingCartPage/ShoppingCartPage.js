@@ -1,28 +1,20 @@
 import React from 'react';
 import logo from '../../logo.svg'; 
-import css from './App.module.css';
+import css from './ShoppingCartPage.module.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { ProductCard } from "../../components";
-import { HomeCards } from "../../components";
 import { Navbar } from "../../components";
 import { Footer } from "../../components";
-import { FeaturedProducts } from "../../components";
+import { CartPage } from "../../components";
 import { products } from "../../utils/products";
 
-function App() {
+function ShoppingCartPage() {
   return (
     <div>
       <Navbar />
-      
-      <HomeCards />
-
-      <FeaturedProducts />
-      
-      <ProductCard />
-
+      <CartPage />
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default ShoppingCartPage;
