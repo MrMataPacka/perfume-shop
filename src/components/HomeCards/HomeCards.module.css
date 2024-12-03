@@ -8,86 +8,102 @@
 }
 
 .homeCards {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    height: 100vh; 
-    padding: 0 20px; 
-    background: linear-gradient(to bottom, #61346B, #BF69C2); 
-  }
-  
-  .imageSection {
-    display: flex;
-    align-items: center; 
-    justify-content: start; 
-    width: 100%;
-  }
-  
-  .mainImg {
-    object-fit: cover;
-    width: 560px;
-    height: 824px;
-  }
-  
-  .textVertical {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-family: 'Italiana', serif;
-    padding-top: 16px;
-    font-size: 48px;
-    margin-right: 80px;
-    color: #FFFFFF;
-  }
-  
-  .rightSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%; 
-  }
-  
-  .orangeBox {
-    background-color: #BF5D20;
-    height: 45%;
-    width: 100%;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  background: linear-gradient(to bottom, #61346B, #BF69C2);
+}
 
-  .orangeBoxH1 {
-    font-weight: normal;
-    color: #FFFFFF;
-    font-family: 'Italiana', serif;
-    font-size: 48px;
-    text-align: center;
-  }
+.imageSection {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
 
-  .textBox {
-    font-weight: normal;
-    color: var(--MoradoOscuro);
-    font-family: 'Italianno', serif;
-    font-size: 40px;
-    text-align: left;
-    
-  }
+.mainImg {
+  object-fit: cover;
+  width: 560px;
+  height: 824px;
+}
 
-  .special {
-    color: #FFFFFF;
-    margin: 16px;
-    font-family: 'Italiana', serif;
-    font-size: 40px;
-  }
-  
-  .smallImg {
-    object-fit: cover;
-    height: 35%;
-    width: 100%;
-  }
-  
-  .textBox {
-    background-color: #FFFFFF;
-    text-align: center;
-    padding: 100px;
-  }
+.textVertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: 'Italiana', serif;
+  padding-top: 16px;
+  font-size: 48px;
+  margin-right: 80px;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.orangeBox {
+  background-color: #BF5D20;
+  height: 45%;
+  width: 100%;
+}
+
+.orangeBoxH1 {
+  font-weight: normal;
+  color: #FFFFFF;
+  font-family: 'Italiana', serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+.textBox {
+  font-weight: normal;
+  color: var(--MoradoOscuro);
+  font-family: 'Italianno', serif;
+  font-size: 40px;
+  text-align: left;
+}
+
+.special {
+  color: #FFFFFF;
+  margin: 16px;
+  font-family: 'Italiana', serif;
+  font-size: 40px;
+}
+
+.smallImg {
+  object-fit: cover;
+  height: 35%;
+  width: 100%;
+}
+
+.textBox {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 100px;
+}
+
+/* Estilo para el botón de la flecha */
+.nextButton {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  font-size: 240px;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.nextButton:hover {
+  color: #BF5D20;
+}
 
   
   
