@@ -111,3 +111,52 @@
     gap: 20px;
 }
 
+.titleProducts {
+    font-weight: normal;
+    font-family: 'Italianno', serif;
+    color: var(--Blanco);
+    font-size: 80px;
+    background-color: var(--MoradoOscuro);
+    width: 100%;
+    padding: 12px; /* Aumenta el padding si quieres más altura para el botón */
+    text-align: center;
+}
+
+.Filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.Filters select {
+    padding: 8px 12px;
+    font-size: 1.25rem;
+    border: 1px solid var(--MoradoClaro);
+    background-color: var(--Marrón);
+    color: var(--Blanco);
+    font-family: 'Italiana', serif;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Filters select:hover {
+    background-color: var(--MoradoClaro);
+    color: var(--MoradoOscuro);
+}
+
+.Filters option {
+    background-color: var(--MoradoOscuro);
+    color: var(--Blanco);
+    padding: 8px;
+    font-family: 'Italiana', serif;
+}
+
+.Filters select:focus {
+    outline: none;
+    border-color: var(--Dorado);
+    background-color: var(--Lavanda);
+    color: var(--MoradoOscuro);
+}
+
+

@@ -3,6 +3,7 @@ import classNames from "classnames";
 import css from "./ProductCard.module.css";
 import { products } from "../../utils/products";
 import { addProductToCart } from "../../utils/shoppingCartProducts";
+import { Link } from "react-router-dom";
 
 class ProductCard extends Component {
     constructor(props) {
@@ -46,6 +47,7 @@ class ProductCard extends Component {
 
     handleAddToCart = (product) => {
         addProductToCart(product); // Llamar a la función que añade el producto al carrito
+        alert(`${product.name} añadido a la cesta.`);
     };
 
     render() {
@@ -53,7 +55,7 @@ class ProductCard extends Component {
 
         return (
             <div className={css.ProductCardContainer}>
-                <h1>Nuestros Productos</h1>
+                <h1 className={css.titleProducts}>Nuestros Productos</h1>
 
                 {/* Filtros */}
                 <div className={css.Filters}>
@@ -75,6 +77,7 @@ class ProductCard extends Component {
                         <option value="">Filtrar por Marca</option>
                         <option value="Chanel">Chanel</option>
                         <option value="Dior">Dior</option>
+                        <option value="Nautica">Nautica</option>
                     </select>
 
                     <select onChange={(e) => this.handleFilterChange('priceFilter', e.target.value)} defaultValue="">
@@ -90,7 +93,7 @@ class ProductCard extends Component {
                         filteredProducts.map((product) => (
                             <div key={product.id} className={classNames(css.ProductCard)}>
                                 <div className={css.ProductCard_header}>
-                                    <img className={css.ProductCard_img} src={product.image} alt={product.name} />
+                                <Link to="/product"><img className={css.ProductCard_img} src={product.image} alt={product.name} /></Link>
                                 </div>
                                 <div className={css.ProductCard_body}>
                                     <h2 className={css.ProductCard_name}>{product.name}</h2>
@@ -101,6 +104,7 @@ class ProductCard extends Component {
                                     className={css.ProductCard_button} 
                                     onClick={() => this.handleAddToCart(product)}>
                                     Añadir a la Cesta
+                                    
                                 </button>
                             </div>
                         ))

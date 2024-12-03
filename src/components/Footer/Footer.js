@@ -7,6 +7,10 @@ const Footer = () => {
       <div className={css.leftSection}>
         <img src={'/MaGellyLogoBlanco2.png'} alt="Logo" className={css.logo} />
         <p className={css.tagline}>Aromas que se quedan contigo</p>
+        {/* Enlace a la sección "Sobre Nosotros" */}
+        <p className={css.aboutLink}>
+          <a href="about">Sobre Nosotros</a>
+        </p>
       </div>
       <div className={css.rightSection}>
         <h3 className={css.socialTitle}>REDES SOCIALES</h3>
@@ -27,3 +31,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -87,21 +87,24 @@
   .quantityInput {
     width: 60px;
     padding: 10px;
-    font-size: 20px; /* Texto más grande */
+    font-size: 28px; /* Texto más grande */
+    font-family: 'Italiana', serif;
   }
   
   .addToCartButton {
+    font-family: 'Italianno', serif;
     background-color: #61346B;
     color: white;
     border: none;
     padding: 15px 25px; /* Botón más grande */
-    font-size: 20px; /* Texto más grande */
+    font-size: 24px; /* Texto más grande */
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .addToCartButton:hover {
     background-color: #CCACDB;
+    color: #61346B;
   }
   
   /* Galería de productos pequeños */

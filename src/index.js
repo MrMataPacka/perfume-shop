@@ -9,7 +9,8 @@ import {
 import {
   AboutUsPage,
   HomePage,
-  ShoppingCartPage
+  ShoppingCartPage,
+  AloneProductPage
 } from './containers';
 
 import reportWebVitals from './reportWebVitals';

@@ -1,5 +1,5 @@
 import { AboutUsPage, 
-    HomePage, ShoppingCartPage} from "./containers";
+    HomePage, ShoppingCartPage, AloneProductPage} from "./containers";
 
 export const routes = [
     {
@@ -9,5 +9,13 @@ export const routes = [
     {
         path: '/shopping-cart',
         element: <ShoppingCartPage />
+    },
+    {
+        path: '/about',
+        element: <AboutUsPage />
+    },
+    {
+        path: '/product',
+        element: <AloneProductPage />
     }
 ]

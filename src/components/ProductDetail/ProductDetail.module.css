@@ -1,0 +1,132 @@
+.productDetail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Cambiar para que se apilen verticalmente */
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 50px;
+    gap: 50px;
+    box-sizing: border-box;
+  }
+  
+  .productImage img {
+    width: 320px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 40px;
+  }
+  
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 600px;
+  }
+  
+  .productName {
+    font-family: 'Italianno', serif;
+    font-size: 60px;
+    color: #61346B;
+  }
+  
+  .stars {
+    font-size: 32px;
+    color: #FFD700;
+  }
+  
+  .pricing {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .priceDiscounted {
+    font-size: 36px;
+    color: #61346B;
+    font-weight: bold;
+  }
+  
+  .originalPrice {
+    font-size: 28px;
+    color: #999999;
+    text-decoration: line-through;
+  }
+  
+  .discountPercentage {
+    font-size: 26px;
+    color: #FF6347;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .quantityInput {
+    width: 60px;
+    padding: 10px;
+    font-size: 28px;
+    font-family: 'Italianna', serif;
+  }
+  
+  .addToCartButton {
+    font-family: 'Italianno', serif;
+    background-color: #61346B;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addToCartButton:hover {
+    background-color: #CCACDB;
+    color: #61346B;
+  }
+  
+  .carousel {
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  .carouselTitle {
+    font-size: 36px;
+    color: #61346B;
+    margin-bottom: 20px;
+  }
+  
+  .productGallery {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .galleryItem {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+  }
+  
+  .galleryItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .galleryItem:hover {
+    border-color: #61346B;
+  }
+
+  
+  

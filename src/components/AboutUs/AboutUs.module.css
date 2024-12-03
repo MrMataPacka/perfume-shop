@@ -1,0 +1,39 @@
+.AboutUsContainer {
+    background-color: var(--MoradoOscuro);
+    color: var(--Blanco);
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    text-align: center;
+}
+
+.AboutUsTitle {
+    font-size: 8rem;
+    font-family: 'Italianno', serif;
+    color: var(--Dorado);
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.AboutUsText {
+    font-size: 2rem;
+    font-family: 'Italiana', serif;
+    line-height: 1.6;
+    color: var(--Blanco);
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.AboutUsText:last-child {
+    margin-bottom: 0;
+}
+
+/* Opcionalmente, se puede agregar un borde inferior */
+.AboutUsContainer::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--Dorado);
+    margin: 20px auto;
+}

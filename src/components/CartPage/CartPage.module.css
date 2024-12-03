@@ -1,32 +1,54 @@
+:root {
+    --Dorado: #CFAC38;
+    --Marrón: #BF5D20;
+    --MoradoOscuro: #61346B;
+    --MoradoClaro: #BF69C2;
+    --Lavanda: #CCACDB;
+    --Blanco: #FFFFFF;
+}
+
 .CartPageContainer {
-    
     display: flex;
     justify-content: space-between;
     padding: 20px;
     gap: 20px;
+    padding-top: 40px;
+    background-color: var(--Blanco); /* Fondo oscuro similar al de las cartas */
+    color: var(--Blanco); /* Texto blanco */
 }
 
 .CartProducts {
-    flex: 3; /* 75% del ancho de la pantalla para la lista de productos */
+    flex: 3;
+    background-color: var(--MoradoOscuro); /* Fondo claro para el listado de productos */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .CartSummary {
-    flex: 1; /* 25% del ancho de la pantalla para el resumen del pedido */
+    flex: 1;
     padding: 20px;
-    padding-top: 80px;
-    border: 2px solid #C193C8;
-    border-radius: 10px;
+    background-color: var(--Lavanda);
+    color: var(--MoradoOscuro);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
 
 .CartTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    text-align: center;
+    color: var(--Blanco);
+    font-family: 'Italiana', serif;
+    
 }
 
 .CartHeaders {
     font-weight: bold;
     margin-bottom: 10px;
+    color: var(--Blanco);
+    font-family: 'Italianno', serif;
+    font-weight: normal;
+    font-size: 1.5rem;
 }
 
 .CartRow {
@@ -34,53 +56,69 @@
     grid-template-columns: 2fr 1fr 1fr;
     gap: 10px;
     align-items: center;
-    border-bottom: 2px solid #C193C8; /* Líneas moradas */
+    border-bottom: 2px solid var(--MoradoClaro);
     padding: 10px 0;
 }
 
 .CartProductInfo {
     display: flex;
     align-items: center;
+    color: var(--Blanco);
 }
 
 .CartProductImage {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin-right: 10px;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 .CartProductQuantity, .CartProductTotal {
     text-align: center;
+    color: var(--Blanco);
 }
 
 .RemoveButton {
-    background-color: #BF5D20;
-    color: white;
+    background-color: var(--Marrón);
+    color: var(--Blanco);
     border: none;
-    padding: 5px 10px;
+    padding: 8px 12px;
     cursor: pointer;
     margin-left: 10px;
+    font-family: 'Italianno', serif;
+    transition: background-color 0.3s ease;
 }
 
 .RemoveButton:hover {
-    background-color: #EFC1E4;
+    background-color: var(--MoradoClaro);
+    color: var(--MoradoOscuro);
 }
 
 .ClearCartButton {
-    background-color: #C193C8;
-    color: white;
+    background-color: var(--Dorado);
+    color: var(--MoradoOscuro);
     border: none;
     padding: 10px;
     margin-top: 20px;
     cursor: pointer;
+    width: 100%;
+    font-family: 'Italianno', serif;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
 }
 
 .ClearCartButton:hover {
-    background-color: #EFC1E4;
+    background-color: var(--MoradoClaro);
+    color: var(--MoradoOscuro);
 }
 
 .CartSummary h2 {
     margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Italiana', serif;
+    font-size: 2rem;
+    color: var(--MoradoOscuro);
 }
 
 .CartNotes {
@@ -91,23 +129,94 @@ textarea {
     width: 100%;
     height: 100px;
     margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #C193C8;
+    padding: -15px;
+    border: 1px solid var(--MoradoClaro);
     border-radius: 5px;
+    background-color: var(--MoradoOscuro);
+    color: var(--Blanco);
+    font-family: 'Italiana', serif;
 }
 
 .PayButton {
     width: 100%;
     padding: 15px;
-    background-color: #CFAC38;
-    color: white;
+    background-color: var(--Dorado);
+    color: var(--MoradoOscuro);
     font-size: 1.2rem;
     border: none;
     margin-top: 20px;
     cursor: pointer;
+    font-family: 'Italianno', serif;
+    transition: background-color 0.3s ease;
 }
 
 .PayButton:hover {
-    background-color: #EFC1E4;
+    background-color: var(--MoradoClaro);
+    color: var(--MoradoOscuro);
 }
+
+/* Resaltar el total en grande */
+.CartTotal {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--MoradoOscuro);
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px solid var(--MoradoClaro);
+    padding-top: 15px;
+}
+
+/* Resaltar el ahorro en grande */
+.CartTotalSaved {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--MoradoClaro);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Resaltar descuentos individuales */
+.CartProductDiscount p:first-child {
+    font-size: 1.5rem;
+    color: var(--Marrón);
+    font-weight: bold;
+}
+
+.newPrice {
+    font-size: 1.5rem;
+    color: var(--Dorado);
+    font-weight: bold;
+}
+
+.PromoCodeSection {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.PromoCodeInput {
+    font-family: 'Italianno', serif;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.ApplyPromoButton {
+    padding: 8px 16px;
+    background-color: var(--Dorado);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.ApplyPromoButton:hover {
+    background-color: var(--Marrón);
+}
+
+
+
+
 

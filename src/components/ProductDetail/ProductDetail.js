@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
-import css from './FeaturedProducts.module.css'; // Asegúrate de tener este archivo de CSS
+import css from './ProductDetail.module.css'; // Asegúrate de tener este archivo de CSS
 import { products } from '../../utils/products'; // Productos de referencia
 import { addProductToCart } from "../../utils/shoppingCartProducts";
 
-const FeaturedProducts = () => {
-  // Filtrar productos que tienen descuento
-  const discountedProducts = products.filter(product => product.discount === "yes");
-
-  const [selectedProduct, setSelectedProduct] = useState(discountedProducts[0]); // Producto seleccionado
+const ProductDetail = () => {
+  const [selectedProduct, setSelectedProduct] = useState(products[0]); // Producto seleccionado
   const [quantity, setQuantity] = useState(1); // Estado para la cantidad seleccionada
-
-  const handleProductChange = (product) => {
-    setSelectedProduct(product); // Cambia el producto al hacer click en una miniatura
-  };
 
   const handleQuantityChange = (e) => {
     setQuantity(parseInt(e.target.value)); // Actualiza la cantidad
@@ -33,7 +26,7 @@ const FeaturedProducts = () => {
   };
 
   return (
-    <div className={css.featuredProduct}>
+    <div className={css.productDetail}>
       {/* Imagen del Producto en Grande */}
       <div className={css.productImage}>
         <img src={selectedProduct.image} alt={selectedProduct.name} />
@@ -41,9 +34,8 @@ const FeaturedProducts = () => {
 
       {/* Información del Producto */}
       <div className={css.productInfo}>
-        <h1 className={css.title}>OFERTAS DESTACADAS</h1>
-        <h2 className={css.productName}>{selectedProduct.name}</h2>
-
+        <h1 className={css.productName}>{selectedProduct.name}</h1>
+        
         {/* Estrellas - puedes usar un paquete de iconos o hacerlo en base a imágenes */}
         <div className={css.stars}>⭐⭐⭐⭐⭐</div>
 
@@ -51,7 +43,9 @@ const FeaturedProducts = () => {
         <div className={css.pricing}>
           <span className={css.priceDiscounted}>${calculateDiscountedPrice(selectedProduct)}</span>
           <span className={css.originalPrice}>${selectedProduct.price.toFixed(2)}</span>
-          <span className={css.discountPercentage}>{selectedProduct.discountPorcent}% OFF</span>
+          {selectedProduct.discountPorcent && (
+            <span className={css.discountPercentage}>{selectedProduct.discountPorcent}% OFF</span>
+          )}
         </div>
 
         {/* Cantidad y botón de añadir a la cesta */}
@@ -67,14 +61,17 @@ const FeaturedProducts = () => {
             Añadir a la cesta
           </button>
         </div>
-        
-        {/* Mini galería de otros productos */}
+      </div>
+
+      {/* Carousel con otros productos */}
+      <div className={css.carousel}>
+        <h2 className={css.carouselTitle}>Otros productos</h2>
         <div className={css.productGallery}>
-          {discountedProducts.map((product) => (
+          {products.map((product) => (
             <div
               key={product.id}
               className={css.galleryItem}
-              onClick={() => handleProductChange(product)}
+              onClick={() => setSelectedProduct(product)} // Cambia el producto al hacer click
             >
               <img src={product.image} alt={product.name} />
             </div>
@@ -85,4 +82,4 @@ const FeaturedProducts = () => {
   );
 };
 
-export default FeaturedProducts;
+export default ProductDetail;
